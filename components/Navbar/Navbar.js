@@ -30,14 +30,14 @@ const Navbar = () => {
                 <>
                     <div className="mx-auto max-w-7xl py-2 px-2 sm:px-6 lg:px-6">
                         <div className="relative flex h-16 items-center justify-between">
-                            <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+                            <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
-                                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <i style={{fontSize:'28px'}} className="fa fa-times block bg-[#fc3792] p-6 rounded-full text-gray-300 text-2xl " aria-hidden="true"></i>
                                     ) : (
-                                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                                        <i style={{fontSize:'28px'}}  className="fa fa-bars block text-3xl bg-[#fc3792] p-6 rounded-full text-gray-200  " aria-hidden="true"></i>
                                     )}
                                 </Disclosure.Button>
                             </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
 
 
 
-                                <div className="hidden md:ml-6 md:block">
+                                <div className="hidden lg:ml-6 lg:block">
                                     <div className="flex space-x-4 items-center">
                                         {navigation.map((item) => (
                                             <Disclosure key={item.name} as="div" className="relative">
@@ -119,7 +119,7 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-                            <div className="absolut inset-y-0 right-0 gap-3 md:flex hidden items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                            <div className="absolut inset-y-0 right-0 gap-3 lg:flex hidden items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
                                 <div className='relative cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px] overflow-hidden text-white bg-[#fc3792] py-5 px-8 flex items-center rounded-full font-bold'>
                                     <span className='z-10'> Plan een Gesprek
@@ -132,16 +132,16 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <Disclosure.Panel className="md:hidden">
-                        <div className="space-y-1 px-2 pb-3 pt-2">
+                    <Disclosure.Panel className="lg:hidden h-screen">
+                        <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col items-center">
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                        'block rounded-md px-3 py-2 text-base font-medium'
+                                        item.current ? 'bg-[#fc3792] text-white' : 'text-black  hover:text-white',
+                                        'block rounded-md px-3 py-2 text-[24px] font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
                                 >

@@ -16,6 +16,11 @@
   }
 }
 
-*{
+body {
+  background-color: #f5f7fc;
+  background-image: linear-gradient(#fff, #f5f7fc 91%);
+}
+
+* {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
