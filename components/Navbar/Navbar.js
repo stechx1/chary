@@ -1,28 +1,43 @@
-import React from 'react'
+import React, { useState, useRef } from 'react';
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Home', href: '/', current: true },
+    { name: 'Home', current: true },
     {
         name: 'Services',
         href: '/',
         current: false,
         subItems: [
-            { name: 'Service 1', href: '/' },
-            { name: 'Service 2', href: '/' },
-            { name: 'Service 3', href: '/' },
+            { name: 'Service 1' },
+            { name: 'Service 2' },
+            { name: 'Service 3' },
         ],
     },
-    { name: 'Case Studies', href: '/', current: false },
-    { name: 'About', href: '/', current: false },
+    { name: 'Case Studies', current: false },
+    { name: 'About', current: false },
 ];
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 const Navbar = () => {
+    // State to track if the Services dropdown should be open
+    const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+    // Ref to keep track of the dropdown panel
+    const servicesDropdownRef = useRef(null);
+
+    // Function to handle mouse enter event for the Services button
+    const handleMouseEnter = () => {
+        setIsServicesOpen(true);
+    };
+
+    // Function to handle mouse leave event for the Services button
+    const handleMouseLeave = () => {
+        setIsServicesOpen(false);
+    };
     return (
 
         <Disclosure as="nav" className="my-3">
@@ -35,9 +50,9 @@ const Navbar = () => {
                                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
-                                        <i style={{fontSize:'28px'}} className="fa fa-times block bg-[#fc3792] p-6 rounded-full text-gray-300 text-2xl " aria-hidden="true"></i>
+                                        <i style={{ fontSize: '28px' }} className="fa fa-times block bg-[#fc3792] p-5 rounded-full text-gray-300 text-2xl " aria-hidden="true"></i>
                                     ) : (
-                                        <i style={{fontSize:'28px'}}  className="fa fa-bars block text-3xl bg-[#fc3792] p-6 rounded-full text-gray-200  " aria-hidden="true"></i>
+                                        <i style={{ fontSize: '28px' }} className="fa fa-bars block text-3xl bg-[#fc3792] p-5 rounded-full text-gray-200  " aria-hidden="true"></i>
                                     )}
                                 </Disclosure.Button>
                             </div>
@@ -51,41 +66,31 @@ const Navbar = () => {
 
 
 
-                                <div className="hidden lg:ml-6 lg:block">
+                                <div
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                    className="hidden lg:ml-6 lg:block"
+                                >
                                     <div className="flex space-x-4 items-center">
                                         {navigation.map((item) => (
                                             <Disclosure key={item.name} as="div" className="relative">
                                                 {({ open }) => (
                                                     <>
                                                         <Disclosure.Button
+                                                            onMouseEnter={() => item.name === 'Services' && setIsServicesOpen(true)}
                                                             className={classNames(
-                                                                item.current ? 'text-black hover:text-[#fc3792] transition duration-300 ease-in-out' : 'text-black hover:text-[#fc3792] transition duration-300 ease-in-out',
+                                                                item.current
+                                                                    ? 'text-black hover:text-[#fc3792] transition duration-300 ease-in-out'
+                                                                    : 'text-black hover:text-[#fc3792] transition duration-300 ease-in-out',
                                                                 'px-5 py-2 text-[16px] font-medium cursor-pointer'
                                                             )}
                                                             aria-current={item.current ? 'page' : undefined}
                                                         >
                                                             {item.name}
-                                                            {/* {item.name === 'Services' && (
-                                                                <svg
-                                                                    className="ml-1 -mr-1 h-5 w-5 text-gray-500"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 20 20"
-                                                                    fill="currentColor"
-                                                                    aria-hidden="true"
-                                                                >
-                                                                    <path
-                                                                        fillRule="evenodd"
-                                                                        d="M6 6l4-4m0 0l4 4m-4-4v14"
-                                                                        stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            )} */}
                                                         </Disclosure.Button>
                                                         {item.name === 'Services' && (
                                                             <Transition
-                                                                show={open}
+                                                                show={open || isServicesOpen} // Show the panel if the button is open or the mouse is on the Services button
                                                                 enter="transition duration-200 ease-out"
                                                                 enterFrom="opacity-0 translate-y-1"
                                                                 enterTo="opacity-100 translate-y-0"
@@ -94,18 +99,24 @@ const Navbar = () => {
                                                                 leaveTo="opacity-0 translate-y-1"
                                                             >
                                                                 <Disclosure.Panel
-                                                                    className="absolute z-10 mt-2 py-2 w-40 bg-white rounded-md shadow-lg"
+                                                                    ref={servicesDropdownRef}
+                                                                    className="absolute z-50 mt-2 py-2 w-40 bg-white rounded-md shadow-lg"
                                                                     static
                                                                 >
                                                                     <div className="px-4 py-2">
                                                                         {item.subItems.map((subItem) => (
-                                                                            <a
+                                                                            <Disclosure.Button
                                                                                 key={subItem.name}
-                                                                                href={subItem.href}
-                                                                                className="block p-4 text-sm text-gray-700 hover:text-white hover:bg-[#fc3792]"
+                                                                                className={classNames(
+                                                                                    item.current
+                                                                                        ? 'text-black hover:bg-[#fc3792] hover:text-white '
+                                                                                        : 'text-black hover:bg-[#fc3792] hover:text-white',
+                                                                                    'px-5 py-2 text-[16px] font-medium cursor-pointer'
+                                                                                )}
+                                                                                aria-current={item.current ? 'page' : undefined}
                                                                             >
                                                                                 {subItem.name}
-                                                                            </a>
+                                                                            </Disclosure.Button>
                                                                         ))}
                                                                     </div>
                                                                 </Disclosure.Panel>

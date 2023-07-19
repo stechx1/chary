@@ -4,10 +4,10 @@ import json from '../../public/animation/anim.json'
 const Hero = () => {
     return (
 
-        <div className='relative z-10 md:flex gap-5 md:justify-between md:max-w-7xl m-auto md:py-2 py-20 md:px-20 px-5'>
-            <div className='flex relative flex-col gap-5 z-10 '>
+        <div className='relative lg:z-[-1] z-10 md:flex gap-5 md:justify-between md:max-w-7xl m-auto md:py-2 py-20 md:px-20 px-5'>
+            <div className='flex relative flex-col gap-5 '>
 
-                    <div className='pr-20 flex absolute z-0 top-0 right-[-12%] lg:hidden'>
+                    <div className='mr-20 flex absolute z-[-1] top-0 right-[-12%] lg:hidden'>
                         <Lottie
                             loop={true}
                             autoPlay={true}
@@ -17,7 +17,7 @@ const Hero = () => {
                         />
 
                     </div>
-                <div className='flex flex-col leading-tight z-10  '>
+                <div className='flex flex-col leading-tight lg:z-[-1] z-10  '>
                     <h1 className='font-extrabold lg:text-[64px] text-[54px] text-[#14142b]'>WE MAKE</h1>
                     <div className='flex items-end gap-1'>
                         <h1 className=' font-extrabold lg:text-[64px] text-[54px] text-[#14142b]'>ADS WORK</h1>
@@ -25,7 +25,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col gap-8 z-10 '>
+                <div className='flex flex-col gap-8 lg:z-[-1] z-10 '>
                     <span className='text-[#4e4b66] text-[18px] max-w-[515px]'>Chary is een E-Commerce Marketing Bureau dat zich specialiseert in de ontwikkeling, uitvoering en doormeting van (omni) marketing strategieën.</span>
                     <span className='text-[#4e4b66] text-[18px] max-w-[515px]'>Sinds onze oprichting in 2019 streven wij ernaar om de hoogste kwaliteit te leveren in het meest competitieve
                         E-Commerce landschap.</span>
