@@ -5,6 +5,8 @@ import Slider from '@/components/Slider'
 import { motion } from 'framer-motion'
 import ResultBox from '@/components/Helper/ResultBox'
 import Expertise from '@/components/Expertise/Expertise'
+import Process from '@/components/Process/Process'
+import ProcessFooter from '@/components/Process/ProcessFooter'
 
 
 export default function Home() {
@@ -57,8 +59,17 @@ export default function Home() {
       </div>
 
       <div className='my-32'>
-        <Expertise/>
+        <Expertise />
       </div>
+
+      <div className='my-32'>
+        <Process />
+      </div>
+
+      <div className=' xl:px-32 sm:p-16 p-5 my-10'>
+        <ProcessFooter/>
+      </div>
+
     </>
   )
 }

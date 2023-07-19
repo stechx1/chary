@@ -30,13 +30,13 @@ const Expertise = () => {
                     <motion.div initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.5 }}>
-                        <ExpertiseBox json={json2} heading={"DATA & ANALYTICS"} para={"Data, de sleutel tot meer inzichten en het optimaliseren van jouw bedrijfsprocessen. Althans dat is de belofte."} />
+                        <ExpertiseBox json={json2} heading={"DATA & ANALYTICS"} para={"Data, de sleutel tot meer inzichten en het optimaliseren van jouw bedrijfsprocessen. Zet jouw data om in waarde."} />
                     </motion.div>
 
                     <motion.div initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.5 }}>
-                        <ExpertiseBox json={json3} heading={"MARKETING AUTOMATION"} para={"Wij van Chary hebben de kennis om dit Wij van Chary hebben de kennis om dit ook voor jouw organisatie op te zetten"} />
+                        <ExpertiseBox json={json3} heading={"MARKETING AUTOMATION"} para={"Marketing Automatisatie haalt meer uit bestaand verkeer en klanten door intelligente Flows en Campagnes in te zentten."} />
                     </motion.div>
                 </div>
             </div>
