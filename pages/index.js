@@ -7,13 +7,14 @@ import ResultBox from '@/components/Helper/ResultBox'
 import Expertise from '@/components/Expertise/Expertise'
 import Process from '@/components/Process/Process'
 import ProcessFooter from '@/components/Process/ProcessFooter'
+import Testimonials from '@/components/Testimonials.js/Testimonials'
 
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <div className='my-10 bg-white p-14'>
+      <div className='my-10 bg-white py-7'>
         <Slider />
       </div>
 
@@ -67,7 +68,23 @@ export default function Home() {
       </div>
 
       <div className=' xl:px-32 sm:p-16 p-5 my-10'>
-        <ProcessFooter/>
+        <ProcessFooter />
+      </div>
+
+      <div className=' mt-20'>
+        <Testimonials />
+      </div>
+
+      <div className='mt-52'>
+        <div className='flex z-10 flex-col gap-3 items-center justify-center '>
+          <span className='text-[#6F3081] text-[18px] font-[700]'>
+            Digital Coffee
+          </span>
+          <div className='flex flex-row items-end'>
+            <span className='text-[#14142b] text-[38px] leading-tight font-[700]'>MEET CHARY </span>
+            <i style={{ fontSize: "7px" }} className="fa fa-circle text-[#6F3081] mb-2 ml-1" aria-hidden="true"></i>
+          </div>
+        </div>
       </div>
 
     </>

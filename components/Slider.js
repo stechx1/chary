@@ -47,7 +47,7 @@ const Slider = () => {
 
       
     return (
-        <div className="" style={{ filter: 'grayscale(1)' }}>
+        <div className="overflow-hidden" style={{ filter: 'grayscale(1)' }}>
 
             <Sliders {...settings}>
                 <div>

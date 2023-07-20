@@ -6,7 +6,7 @@ const Process = () => {
   return (
     <motion.div initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row flex-col gap-16 md:justify-between m-auto md:py-2 py-20 md:px-20 px-5 relative'>
+      transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row flex-col gap-16 md:justify-between m-auto md:py-2 py-20 md:px-32 px-5 relative'>
       <div className='flex z-10 flex-col gap-3  xl:sticky xl:h-full top-32 xl:w-[530px] w-full '>
         <span className='text-[#6F3081] text-[18px] font-[700]'><i className="fa fa-minus mr-3" aria-hidden="true"></i>
           Our Process</span>
@@ -19,7 +19,10 @@ const Process = () => {
 
         <span className='text-[18px] text-[#6e7191]'>Ons 4-delige stappenplan vormt de fundering van iedere samenwerking.</span>
       </div>
-      <div className={`absolute z-0 w-52 h-52 top-[650px] xl:block hidden left-[420px] bg-gradient-to-br from-[#6F3081] to-[#B2DEFD] blur-[150px] rounded-full`} />
+
+      <img style={{ "top": "18%", "mixBlendMode": "multiply", "left": "27%", "width": "55%", "filter": "blur(5px)", "transform": "scaleX(-1)" }} src="/images/blur.jpg" alt="blur" className='absolute z-0 xl:block hidden ' />
+
+      {/* <div className={`absolute z-0 w-52 h-52 top-[650px] xl:block hidden left-[420px] bg-gradient-to-br from-[#6F3081] to-[#B2DEFD] blur-[150px] rounded-full`} /> */}
 
 
 

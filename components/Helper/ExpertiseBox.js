@@ -13,7 +13,7 @@ const ExpertiseBox = ({ heading, para, json }) => {
       />
 
       <div className='flex flex-col leading-tight mt-6 mb-4 items-center max-w-[215px]'>
-        <h1 className='text-[30px] text-center font-extrabold text-[#14142b]'>{heading}</h1>
+        <h1 className='text-[26px] text-center font-extrabold text-[#14142b]'>{heading}</h1>
       </div>
       <div className='text-center'>
         <span className='text-[#6e7191] text-[18px] text-center'>{para}</span>
