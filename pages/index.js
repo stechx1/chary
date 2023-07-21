@@ -8,6 +8,7 @@ import Expertise from '@/components/Expertise/Expertise'
 import Process from '@/components/Process/Process'
 import ProcessFooter from '@/components/Process/ProcessFooter'
 import Testimonials from '@/components/Testimonials.js/Testimonials'
+import Contact from '@/components/Contact/Contact'
 
 
 export default function Home() {
@@ -75,8 +76,8 @@ export default function Home() {
         <Testimonials />
       </div>
 
-      <div className='mt-52'>
-        
+      <div className='mt-52 pb-14'>
+          <Contact/>
       </div>
 
     </>
