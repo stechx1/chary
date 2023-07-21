@@ -2,7 +2,7 @@ import React from 'react'
 
 const TestimonialBox = ({image, heading, para, name, position}) => {
     return (
-        <div style={{boxShadow:'0 6px 12px rgba(20,20,43,.05)'}} className='flex rounded-[40px] flex-col gap-5 p-10 bg-white border border-[eff0f6]'>
+        <div style={{boxShadow:'0 6px 12px rgba(20,20,43,.05)'}} className='flex rounded-[40px] flex-col gap-5 xl:py-10 xl:px-10 py-10 px-5 bg-white border border-[eff0f6]'>
             <div>
                 <img src={image} alt="testimonial" className='max-w-[150px]' />
             </div>
