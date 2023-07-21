@@ -3,8 +3,8 @@ import React from 'react'
 const ProcessBox = ({image, heading, para}) => {
     return (
         <div style={{boxShadow:"0 6px 12px rgba(20,20,43,.05)"}} className='flex sm:flex-row flex-col py-[42px] px-[32px] bg-white rounded-[40px] border border-[#eff0f6] gap-5 '>
-            <div className='p-4 flex items-center bg-[#6F3081] min-h-[100px] h-[100px] rounded-3xl min-w-[100px]'>
-                <img src={image} alt="logo" className='' />
+            <div className='p-4 flex items-center bg-[#6F3081] min-h-[100px] h-[100px] rounded-3xl w-[100px] min-w-[100px]'>
+                <img src={image} alt="logo" className='w-fit' />
             </div>
 
             <div className='flex flex-col gap-5'>

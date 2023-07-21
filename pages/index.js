@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className='my-10 bg-white py-7'>
+      <div className='my-24 bg-white py-7'>
         <Slider />
       </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
         <Expertise />
       </div>
 
-      <div className='my-32'>
+      <div className='my-36'>
         <Process />
       </div>
 
@@ -71,20 +71,12 @@ export default function Home() {
         <ProcessFooter />
       </div>
 
-      <div className=' mt-20'>
+      <div className=' mt-36'>
         <Testimonials />
       </div>
 
       <div className='mt-52'>
-        <div className='flex z-10 flex-col gap-3 items-center justify-center '>
-          <span className='text-[#6F3081] text-[18px] font-[700]'>
-            Digital Coffee
-          </span>
-          <div className='flex flex-row items-end'>
-            <span className='text-[#14142b] text-[38px] leading-tight font-[700]'>MEET CHARY </span>
-            <i style={{ fontSize: "7px" }} className="fa fa-circle text-[#6F3081] mb-2 ml-1" aria-hidden="true"></i>
-          </div>
-        </div>
+        
       </div>
 
     </>

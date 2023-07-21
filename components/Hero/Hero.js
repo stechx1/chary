@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie-player'
-import json from '../../public/animation/anim.json'
+import json from '../../public/animation/anim4.json'
 const Hero = () => {
     return (
 

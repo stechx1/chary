@@ -19,7 +19,7 @@ const Expertise = () => {
                 </div>
             </motion.div>
 
-            <div className='flex mt-20 justify-center'>
+            <div className='flex mt-12 justify-center'>
                 <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 xl:px-20 px-5'>
                     <motion.div initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
