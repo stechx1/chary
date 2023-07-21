@@ -9,7 +9,7 @@ const Hero = () => {
             <div className='relative lg:z-[-1] z-10 md:flex gap-5 md:justify-between md:max-w-7xl m-auto md:py-2 py-20 md:px-20 px-5'>
                 <div className='flex relative flex-col gap-5 '>
 
-                    <div className='mr-20 flex absolute z-[-1] top-0 right-[-12%] lg:hidden'>
+                    <div className='mr-20 flex absolute z-[-1] top-[-8%] right-[-25%] lg:hidden'>
                         <Lottie
                             loop={true}
                             autoPlay={true}

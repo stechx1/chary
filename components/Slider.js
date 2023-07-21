@@ -51,34 +51,34 @@ const Slider = () => {
 
             <Sliders {...settings}>
                 <div>
-                    <img src="/slider/img.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img.png" alt="logo" className='w-1/2 pt-3' />
                 </div>
                 <div>
                     <img src="/slider/img1.png" alt="logo" className='w-1/2' />
                 </div>
                 <div>
-                    <img src="/slider/img2.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img2.png" alt="logo" className='w-1/2 pt-5' />
                 </div>
                 <div>
-                    <img src="/slider/img3.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img3.png" alt="logo" className='w-1/2 pt-5' />
                 </div>
                 <div>
-                    <img src="/slider/img.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img.png" alt="logo" className='w-1/2 pt-3' />
                 </div>
                 <div>
-                    <img src="/slider/img3.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img3.png" alt="logo" className='w-1/2 pt-5' />
                 </div>
                 <div>
                     <img src="/slider/img1.png" alt="logo" className='w-1/2' />
                 </div>
                 <div>
-                    <img src="/slider/img2.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img2.png" alt="logo" className='w-1/2 pt-5' />
                 </div>
                 <div>
-                    <img src="/slider/img3.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img3.png" alt="logo" className='w-1/2 pt-5' />
                 </div>
                 <div>
-                    <img src="/slider/img.png" alt="logo" className='w-1/2' />
+                    <img src="/slider/img.png" alt="logo" className='w-1/2 pt-3' />
                 </div>
             </Sliders>
         </div>

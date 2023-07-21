@@ -5,14 +5,17 @@ const Testimonials = () => {
     return (
         <motion.div initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row flex-col xl:gap-10 m-auto md:py-2 py-20 md:px-36 px-5'>
+            transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row flex-col xl:gap-7 m-auto md:py-2 md:px-36 px-5'>
             <div className='flex z-10 flex-col gap-3 flex-1 '>
                 <span className='text-[#6F3081] text-[18px] font-[700]'><i className="fa fa-minus mr-3" aria-hidden="true"></i>
                     Testimonials
                 </span>
-                <div className='flex flex-row items-end'>
-                    <span className='text-[#14142b] text-[38px] leading-tight font-[700]'>WAT ONZE KLANTEN VINDEN </span>
-                    <i style={{ fontSize: "7px" }} className="fa fa-circle text-[#6F3081] mb-2 ml-1" aria-hidden="true"></i>
+                
+
+                <div className=''>
+
+                    <span className='text-[#14142b] sm:text-[38px] text-[30px] leading-tight font-[700]'>WAT ONZE KLANTEN VINDEN  <i style={{ fontSize: "11px" }} className="fa fa-circle text-[#6F3081] mb-1" aria-hidden="true"></i></span>
+
                 </div>
                 <div className='my-10'>
                     <TestimonialBox heading={"THE GARRISON"} para={"Ik ben heel tevreden over de samenwerking. Ze hebben uitstekende kennis en zijn altijd bereikbaar voor vragen. Ik kan dan ook goed mijn ideeën en vragen kwijt. De persoonlijke aanpak, het tijd vrijmaken en aandachtig luisteren zijn voor mij grote pluspunten in de samenwerking."} name={"Ruben Vlier"} position={"CEO"} image={"/images/testimonial/testimonial1.png"} />

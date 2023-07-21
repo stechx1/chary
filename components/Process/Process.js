@@ -6,14 +6,14 @@ const Process = () => {
   return (
     <motion.div initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row flex-col gap-16 md:justify-between m-auto md:py-8 py-20 md:px-32 px-5 relative'>
+      transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row flex-col gap-16 md:justify-between m-auto md:py-8 2xl:px-32 xl:px-14 px-5 relative'>
       <div className='flex z-10 flex-col gap-3  xl:sticky xl:h-full top-32 xl:w-[530px] w-full '>
         <span className='text-[#6F3081] text-[18px] font-[700]'><i className="fa fa-minus mr-3" aria-hidden="true"></i>
           Our Process</span>
 
         <div>
 
-          <span className='text-[#14142b] text-[38px] leading-tight font-[700]'>OM AMBITIEUZE DOELSTELLINGEN TE BEREIKEN IS EEN DUIDELIJK STAPPENPLAN NODIG <i style={{ fontSize: "11px" }} className="fa fa-circle text-[#6F3081] mb-1" aria-hidden="true"></i></span>
+          <span className='text-[#14142b] sm:text-[38px] text-[30px] leading-tight font-[700]'>OM AMBITIEUZE DOELSTELLINGEN TE BEREIKEN IS EEN DUIDELIJK STAPPENPLAN NODIG <i style={{ fontSize: "11px" }} className="fa fa-circle text-[#6F3081] mb-1" aria-hidden="true"></i></span>
 
         </div>
 

@@ -63,7 +63,7 @@ export default function Home() {
         <Expertise />
       </div>
 
-      <div className='my-36'>
+      <div className='sm:my-36'>
         <Process />
       </div>
 
@@ -71,7 +71,7 @@ export default function Home() {
         <ProcessFooter />
       </div>
 
-      <div className=' mt-36'>
+      <div className=' sm:mt-36 mt-20'>
         <Testimonials />
       </div>
 

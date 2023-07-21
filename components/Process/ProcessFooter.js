@@ -2,8 +2,8 @@ import React from 'react'
 
 const ProcessFooter = () => {
     return (
-        <div className='flex xl:flex-row flex-col justify-between gap-20 cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px]  bg-[#6F3081] xl:p-20 p-10 rounded-[50px]'>
-            <h1 className=' xl:w-2/3 text-[32px] font-bold text-white'>KLAAR OM DE VOLGENDE STAP VOOR JOUW BEDRIJF TE MAKEN?</h1>
+        <div className='flex xl:flex-row flex-col justify-between gap-20 cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px]  bg-[#6F3081] xl:p-20 sm:p-10 p-4 rounded-[50px]'>
+            <h1 className=' xl:w-2/3 sm:text-[32px] text-[27px] font-bold text-white'>KLAAR OM DE VOLGENDE STAP VOOR JOUW BEDRIJF TE MAKEN?</h1>
             <div className='flex-1'>
                 <div className='relative  cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px] overflow-hidden text-[#6F3081] bg-[white] py-7 px-14 flex items-center rounded-full font-bold w-fit'>
                     <span className='z-10'> Plan een Gesprek

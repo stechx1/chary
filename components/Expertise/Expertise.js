@@ -13,10 +13,17 @@ const Expertise = () => {
                 transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex flex-col gap-4 leading-tight items-center'>
                 <span className='text-[#6F3081] text-[18px] font-[700]'>Our Expertise</span>
 
-                <div className='flex items-end gap-1'>
-                    <span className='text-[#14142b] text-center text-[38px] font-[700]'>E-COMMERCE MARKETING SERVICES </span>
+                {/* <div className='flex items-end gap-1'>
+                    <span className='text-[#14142b] text-center text-[38px] font-[700]'> </span>
                     <span className='pl-2 h-[8px] mb-[10px]  rounded-full bg-[#6F3081]'></span>
+                </div> */}
+
+                <div className='flex items-center'>
+
+                    <span className='text-[#14142b] sm:text-[38px] text-[30px] text-center leading-tight font-[700]'>E-COMMERCE MARKETING SERVICES <i style={{ fontSize: "11px" }} className="fa fa-circle text-[#6F3081] mb-1" aria-hidden="true"></i></span>
+
                 </div>
+
             </motion.div>
 
             <div className='flex mt-12 justify-center'>
