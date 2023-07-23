@@ -8,7 +8,7 @@ const ProcessBox = ({image, heading, para}) => {
             </div>
 
             <div className='flex flex-col gap-5'>
-                <h1 className='text-[26px] font-bold text-[#14142b]'>{heading}</h1>
+                <h1 className='sm:text-[26px] text-[20px] font-bold text-[#14142b]'>{heading}</h1>
                 <p className='text-[18px] text-[#6e7191]'>{para}</p>
             </div>
         </div>

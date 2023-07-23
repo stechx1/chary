@@ -5,7 +5,7 @@ const Testimonials = () => {
     return (
         <motion.div initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row flex-col xl:gap-7 m-auto md:py-2 md:px-36 px-5'>
+            transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex xl:flex-row xl:max-w-[87rem] flex-col xl:gap-7 m-auto md:py-2 px-10'>
             <div className='flex z-10 flex-col gap-3 flex-1 '>
                 <span className='text-[#6F3081] text-[18px] font-[700]'><i className="fa fa-minus mr-3" aria-hidden="true"></i>
                     Testimonials

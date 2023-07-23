@@ -6,7 +6,7 @@ const Hero = () => {
 
         <>
 
-            <div className='relative lg:z-[-1] z-10 md:flex gap-5 md:justify-between md:max-w-7xl m-auto md:py-2 py-20 md:px-20 px-5'>
+            <div className='relative lg:z-[-1] z-10 md:flex gap-5 md:justify-between md:max-w-7xl m-auto md:pt-20 py-20 md:px-20 px-5'>
                 <div className='flex relative flex-col gap-5 '>
 
                     <div className='mr-20 flex absolute z-[-1] top-[-8%] right-[-25%] lg:hidden'>
@@ -21,10 +21,13 @@ const Hero = () => {
                     </div>
                     <div className='flex flex-col leading-tight lg:z-[-1] z-10  '>
                         <h1 className='font-extrabold lg:text-[64px] text-[54px] text-[#14142b]'>WE MAKE</h1>
-                        <div className='flex items-end gap-1'>
-                            <h1 className=' font-extrabold lg:text-[64px] text-[54px] text-[#14142b]'>ADS WORK</h1>
-                            <span className='pl-3 h-[12px] mb-[10px]  rounded-full bg-[#6F3081]'></span>
-                        </div>
+                        
+
+                        <div className='flex items-center'>
+
+                    <span className='text-[#14142b] font-extrabold lg:text-[64px] text-[54px] leading-tight'>ADS WORK <i style={{ fontSize: "11px" }} className="fa fa-circle text-[#6F3081] mb-1" aria-hidden="true"></i></span>
+
+                </div>
                     </div>
 
                     <div className='flex flex-col gap-8 lg:z-[-1] z-10 '>
@@ -47,7 +50,7 @@ const Hero = () => {
 
                 </div>
             </div >
-            <div className='flex mt-3 z-10 md:max-w-7xl m-auto py-2 md:px-20 px-5 '>
+            <div className='flex  z-10 md:max-w-7xl m-auto md:px-20 px-5 '>
                 <div className='relative cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px] overflow-hidden text-white bg-[#6F3081] py-7 px-14 flex items-center rounded-full font-bold'>
                     <span className='z-10'> Plan een Gesprek
                         <i className="fa fa-arrow-right text-white pl-2" aria-hidden="true"></i>

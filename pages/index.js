@@ -29,7 +29,7 @@ export default function Home() {
           Onze resultaten gemeten in cijfers
         </motion.span>
       </div>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3 xl:px-32 px-10 my-8">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 xl:px-32 px-10 my-8 xl:max-w-[87rem] m-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -68,7 +68,7 @@ export default function Home() {
         <Process />
       </div>
 
-      <div className=' xl:px-32 sm:p-16 p-5 my-10'>
+      <div className=' xl:max-w-[87rem] m-auto sm:p-16 p-5 my-10'>
         <ProcessFooter />
       </div>
 

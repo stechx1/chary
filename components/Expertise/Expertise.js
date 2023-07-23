@@ -7,7 +7,7 @@ import json3 from '../../public/animation/anim3.json'
 
 const Expertise = () => {
     return (
-        <div>
+        <div className='md:max-w-[87rem] m-auto'>
             <motion.div initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.7, ease: 'easeInOut' }} className='flex flex-col gap-4 leading-tight items-center'>
