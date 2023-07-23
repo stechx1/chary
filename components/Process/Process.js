@@ -13,7 +13,7 @@ const Process = () => {
 
         <div>
 
-          <span className='text-[#14142b] sm:text-[38px] text-[30px] leading-tight font-[700]'>OM AMBITIEUZE DOELSTELLINGEN TE BEREIKEN IS EEN DUIDELIJK STAPPENPLAN NODIG <i style={{ fontSize: "11px" }} className="fa fa-circle text-[#6F3081] mb-1" aria-hidden="true"></i></span>
+          <span className='text-[#14142b] sm:text-[38px] text-[28px] leading-tight font-[700]'>OM AMBITIEUZE DOELSTELLINGEN TE BEREIKEN IS EEN DUIDELIJK STAPPENPLAN NODIG <i style={{ fontSize: "11px" }} className="fa fa-circle text-[#6F3081] mb-1" aria-hidden="true"></i></span>
 
         </div>
 
