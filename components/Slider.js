@@ -9,15 +9,11 @@ const Slider = () => {
     const handleResize = () => {
       if (window.innerWidth > 980) {
         setSwiperSlidesPerView('6');
-      }else if(window.innerWidth > 772){
+      } else if (window.innerWidth > 772) {
         setSwiperSlidesPerView('4');
-
-      }
-      else if(window.innerWidth > 500){
+      } else if (window.innerWidth > 500) {
         setSwiperSlidesPerView('2');
-
-      }
-       else {
+      } else {
         setSwiperSlidesPerView('1');
       }
     };
@@ -45,44 +41,42 @@ const Slider = () => {
     pauseOnHover: false,
   };
 
-      
-    return (
-        <div className="overflow-hidden" style={{ filter: 'grayscale(1)' }}>
-
-            <Sliders {...settings}>
-                <div>
-                    <img src="/slider/img.png" alt="logo" className='w-1/2 pt-3' />
-                </div>
-                <div>
-                    <img src="/slider/img1.png" alt="logo" className='w-1/2' />
-                </div>
-                <div>
-                    <img src="/slider/img2.png" alt="logo" className='w-1/2 pt-5' />
-                </div>
-                <div>
-                    <img src="/slider/img3.png" alt="logo" className='w-1/2 pt-5' />
-                </div>
-                <div>
-                    <img src="/slider/img.png" alt="logo" className='w-1/2 pt-3' />
-                </div>
-                <div>
-                    <img src="/slider/img3.png" alt="logo" className='w-1/2 pt-5' />
-                </div>
-                <div>
-                    <img src="/slider/img1.png" alt="logo" className='w-1/2' />
-                </div>
-                <div>
-                    <img src="/slider/img2.png" alt="logo" className='w-1/2 pt-5' />
-                </div>
-                <div>
-                    <img src="/slider/img3.png" alt="logo" className='w-1/2 pt-5' />
-                </div>
-                <div>
-                    <img src="/slider/img.png" alt="logo" className='w-1/2 pt-3' />
-                </div>
-            </Sliders>
+  return (
+    <div className='overflow-hidden' style={{ filter: 'grayscale(1)' }}>
+      <Sliders {...settings}>
+        <div>
+          <img src='/svg/facebook.svg' alt='logo' className='w-1/2 pt-3' />
         </div>
-    )
-}
+        <div>
+          <img src='/svg/instagram.svg' alt='logo' className='w-1/2 pt-3' />
+        </div>
+        <div>
+          <img src='/svg/tiktok.svg' alt='logo' className='w-1/2 pt-3' />
+        </div>
+        <div>
+          <img src='/svg/slack.svg' alt='logo' className='w-1/2 pt-3' />
+        </div>
+        <div>
+          <img src='/svg/hubstaff.svg' alt='logo' className='w-1/2 pt-3' />
+        </div>
+        <div>
+          <img src='/svg/outlook.svg' alt='logo' className='w-1/2 pt-3' />
+        </div>
+        <div>
+          <img src='/svg/dayone.png' alt='logo' className='w-1/2' />
+        </div>
+        {/* <div>
+          <img src='/slider/img2.png' alt='logo' className='w-1/2 pt-5' />
+        </div>
+        <div>
+          <img src='/slider/img3.png' alt='logo' className='w-1/2 pt-5' />
+        </div>
+        <div>
+          <img src='/slider/img.png' alt='logo' className='w-1/2 pt-3' />
+        </div> */}
+      </Sliders>
+    </div>
+  );
+};
 
-export default Slider
+export default Slider;

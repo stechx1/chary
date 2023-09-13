@@ -1,15 +1,14 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Hero from '@/components/Hero/Hero'
-import Slider from '@/components/Slider'
-import { motion } from 'framer-motion'
-import ResultBox from '@/components/Helper/ResultBox'
-import Expertise from '@/components/Expertise/Expertise'
-import Process from '@/components/Process/Process'
-import ProcessFooter from '@/components/Process/ProcessFooter'
-import Testimonials from '@/components/Testimonials.js/Testimonials'
-import Contact from '@/components/Contact/Contact'
-
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import Hero from '@/components/Hero/Hero';
+import Slider from '@/components/Slider';
+import { motion } from 'framer-motion';
+import ResultBox from '@/components/Helper/ResultBox';
+import Expertise from '@/components/Expertise/Expertise';
+import Process from '@/components/Process/Process';
+import ProcessFooter from '@/components/Process/ProcessFooter';
+import Testimonials from '@/components/Testimonials.js/Testimonials';
+import Contact from '@/components/Contact/Contact';
 
 export default function Home() {
   return (
@@ -19,44 +18,44 @@ export default function Home() {
         <Slider />
       </div>
 
-      <div className="my-10 flex flex-col items-center">
+      <div className='my-10 flex flex-col items-center'>
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7, ease: 'easeInOut' }}
-          className="text-center text-[22px] text-[#14142b]"
+          className='text-center text-[22px] text-[#14142b]'
         >
-          Onze resultaten gemeten in cijfers
+          Our results measured in numbers
         </motion.span>
       </div>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 xl:px-32 px-10 my-8 xl:max-w-[87rem] m-auto">
+      <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 xl:px-32 px-10 my-8 xl:max-w-[87rem] m-auto'>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7, ease: 'easeInOut', delay: 0 }}
         >
-          <ResultBox number={'48'} heading={'Happy Clients'} />
+          <ResultBox number={'67'} heading={'Satisfied Clients'} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.2 }}
         >
-          <ResultBox number={'13.6m'} heading={'Revenue Generated'} />
+          <ResultBox number={'$5.5m'} heading={'Revenue Generated'} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.4 }}
         >
-          <ResultBox number={'2.5m'} heading={'Ad Budget Spent'} />
+          <ResultBox number={'$1.2m'} heading={'Ad Budget Invested'} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.6 }}
         >
-          <ResultBox number={'6.3'} heading={'Average ROAS'} />
+          <ResultBox number={'4.6'} heading={'Average ROAS'} />
         </motion.div>
       </div>
 
@@ -77,9 +76,8 @@ export default function Home() {
       </div>
 
       <div className='mt-52 pb-14'>
-          <Contact/>
+        <Contact />
       </div>
-
     </>
-  )
+  );
 }
