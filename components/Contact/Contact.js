@@ -14,10 +14,6 @@ const Contact = () => {
           Contact Us
         </span>
 
-        {/* <div className='flex items-end gap-1'>
-                    <span className='text-[#14142b] text-center text-[38px] font-[700]'> </span>
-                    <span className='pl-2 h-[8px] mb-[10px]  rounded-full bg-[#6F3081]'></span>
-                </div> */}
 
         <div className='flex items-center'>
           <span className='text-[#14142b] uppercase sm:text-[38px] text-[30px] text-center leading-tight font-[700]'>

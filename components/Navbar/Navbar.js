@@ -54,8 +54,8 @@ const Navbar = () => {
                 </Disclosure.Button>
               </div>
               <img
-                className='block h-12 w-auto md:ml-0 ml-5 '
-                src='/images/logo.png'
+                className='block h-[80px] w-auto md:ml-0 ml-5 '
+                src='/images/logo.svg'
                 alt='Your Company'
               />
               <div className='flex flex-1 items-center justify-center sm:items-stretch '>

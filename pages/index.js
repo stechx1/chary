@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import Hero from '@/components/Hero/Hero';
 import Slider from '@/components/Slider';
 import { motion } from 'framer-motion';
@@ -9,10 +7,14 @@ import Process from '@/components/Process/Process';
 import ProcessFooter from '@/components/Process/ProcessFooter';
 import Testimonials from '@/components/Testimonials.js/Testimonials';
 import Contact from '@/components/Contact/Contact';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Globalone | We make ads work</title>
+      </Head>
       <Hero />
       <div className='my-24 bg-white py-7'>
         <Slider />
