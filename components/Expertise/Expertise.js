@@ -5,7 +5,7 @@ import json1 from '../../public/animation/anim1.json';
 import json2 from '../../public/animation/anim2.json';
 import json3 from '../../public/animation/anim3.json';
 
-const Expertise = () => {
+const Expertise = ({scrollToContact}) => {
   return (
     <div className='md:max-w-[87rem] m-auto'>
       <motion.div
@@ -42,7 +42,7 @@ const Expertise = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.5 }}
           >
-            <ExpertiseBox
+            <ExpertiseBox scrollToContact={scrollToContact}
               json={json1}
               heading={'PAID ADVERTISING'}
               para={
@@ -56,7 +56,7 @@ const Expertise = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.5 }}
           >
-            <ExpertiseBox
+            <ExpertiseBox scrollToContact={scrollToContact}
               json={json2}
               heading={'DATA & ANALYTICS'}
               para={
@@ -70,7 +70,7 @@ const Expertise = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, ease: 'easeInOut', delay: 0.5 }}
           >
-            <ExpertiseBox
+            <ExpertiseBox scrollToContact={scrollToContact}
               json={json3}
               heading={'MARKETING AUTOMATION'}
               para={

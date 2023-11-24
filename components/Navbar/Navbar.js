@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRef } from 'react';
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import {
@@ -8,26 +9,32 @@ import {
   ChevronDownIcon,
 } from '@heroicons/react/24/outline';
 
-const navigation = [
-  { name: 'Home', href: '/', current: true },
-  {
-    name: 'Services',
-    href: '/',
-    current: false,
-    subItems: [
-      { name: 'Paid Advertising', href: '/' },
-      { name: 'Data and Analytics', href: '/' },
-      { name: 'Marketing Automation', href: '/' },
-    ],
-  },
-  { name: 'Case Studies', href: '/', current: false },
-  { name: 'About', href: '/', current: false },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
-const Navbar = () => {
+const Navbar = ({ scrollToContact, scrollToOurResults, scrollToApproach, scrollToOurExpertise}) => {
+  const navigation = [
+    { name: 'Home', href: '/', current: true },
+    { name: 'Our Results', href: '#', current: true, onClick: scrollToOurResults },
+    { name: 'Our Expertise', href: '#', current: true, onClick: scrollToOurExpertise },
+    // {
+    //   name: 'Services',
+    //   href: '/',
+    //   current: false,
+    //   subItems: [
+    //     { name: 'Paid Advertising', href: '/' },
+    //     { name: 'Data and Analytics', href: '/' },
+    //     { name: 'Marketing Automation', href: '/' },
+    //   ],
+    // },
+    { name: 'Our Approach', href: '#', current: false, onClick: scrollToApproach },
+    // { name: 'About', href: '/', current: false },
+  ];
+  const resultsRef = useRef(null);
+  const expertiseRef = useRef(null);
+
+
   return (
     <Disclosure as='nav' className='my-3'>
       {({ open }) => (
@@ -65,7 +72,7 @@ const Navbar = () => {
                       <Disclosure key={item.name} as='div' className='relative'>
                         {({ open }) => (
                           <>
-                            <Disclosure.Button
+                            <Disclosure.Button onClick={item.onClick}
                               className={classNames(
                                 item.current
                                   ? 'text-black hover:text-[#6F3081] transition duration-300 ease-in-out'
@@ -104,6 +111,7 @@ const Navbar = () => {
                                   <div className='px-4 py-2'>
                                     {item.subItems.map((subItem) => (
                                       <a
+                                        onClick={subItem.onClick}
                                         key={subItem.name}
                                         href={subItem.href}
                                         className='block p-4 text-[18px] text-gray-700 hover:text-white hover:bg-[#6F3081]'
@@ -122,11 +130,13 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className='absolut inset-y-0 right-0 gap-3 lg:flex hidden items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
+              <div  onClick={scrollToContact} className='absolut inset-y-0 right-0 gap-3 lg:flex hidden items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
                 <div className='relative cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px] overflow-hidden text-white bg-[#6F3081] py-5 px-8 flex items-center rounded-full font-bold'>
                   <span className='z-10'>
                     {' '}
-                    Contact Us
+                    <a href='#'>
+                      Contact Us
+                    </a>
                     <i
                       className='fa fa-arrow-right text-white pl-2'
                       aria-hidden='true'
@@ -143,6 +153,7 @@ const Navbar = () => {
             <div className='space-y-1 px-2 pb-3 pt-2 flex flex-col items-center'>
               {navigation.map((item) => (
                 <Disclosure.Button
+                  onClick={item.onClick}
                   key={item.name}
                   as='a'
                   href={item.href}

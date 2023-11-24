@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'react-lottie-player';
 import json from '../../public/animation/anim4.json';
-const Hero = () => {
+const Hero = ({scrollToContact}) => {
   return (
     <>
       <div className='relative lg:z-[-1] z-10 md:flex gap-5 md:justify-between md:max-w-7xl m-auto md:pt-20 py-4 md:px-20 px-5'>
@@ -52,7 +52,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className='flex  z-10 md:max-w-7xl m-auto md:px-20 px-5 '>
+      <div onClick={scrollToContact} className='flex  z-10 md:max-w-7xl m-auto md:px-20 px-5 '>
         <div className='relative cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px] overflow-hidden text-white bg-[#6F3081] py-7 px-14 flex items-center rounded-full font-bold'>
           <span className='z-10'>
             {' '}
