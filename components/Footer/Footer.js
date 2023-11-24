@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='flex justify-between  py-[27px]'>
         <div className='flex items-center gap-1'>
           <span className='text-[18px] text-[#6F3081] cursor-pointer '>
-            Terms and Conditions
+            All Rights Reserved © - Globalone.co
           </span>
           <span className='text-[18px] text-[#6e7191] '>|</span>
           <span className='text-[18px] text-[#6F3081] cursor-pointer '>
