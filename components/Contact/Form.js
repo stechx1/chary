@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
-  const [state, handleSubmit] = useForm('xnqkowbk');
+  const [state, handleSubmit] = useForm('mdorrbrq');
   const contactRef = React.useRef(null);
 
   const [name, setName] = useState('');
@@ -17,14 +17,27 @@ const Form = () => {
   };
 
   const handleContactSubmission = () => {
-    console.log('Clicked');
-    toast.success('Successfully sent your message', {
-      style: {
-        padding: '20px 60px',
-        fontSize: '1.2rem',
-      },
-    });
-    setTimeout(clearStates, 2000);
+    if (!name || !email || !message) {
+      // Check if any of the fields are empty
+      toast.error('Please fill all the fields', {
+        style: {
+          padding: '20px 60px',
+          fontSize: '1.2rem',
+        },
+      }); // Show an error message
+    } else {
+      // If all fields are filled, proceed with form submission
+      console.log('Form submitted:', { name, email, message });
+
+      toast.success('Successfully sent your message', {
+        style: {
+          padding: '20px 60px',
+          fontSize: '1.2rem',
+        },
+      });
+
+      setTimeout(clearStates, 2000);
+    }
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -41,6 +54,7 @@ const Form = () => {
             id='username'
             className=' py-5 px-3 border rounded-xl '
             placeholder='Your Name'
+            required
           />
 
           <input
@@ -51,6 +65,7 @@ const Form = () => {
             id='email'
             className=' py-5 px-3 border rounded-xl '
             placeholder='Your Email'
+            required
           />
 
           <ValidationError prefix='Email' field='email' errors={state.errors} />
@@ -64,6 +79,7 @@ const Form = () => {
             className=' py-5 px-3 border rounded-xl resize-none '
             rows={5}
             placeholder='Enter Something ......'
+            required
           ></textarea>
 
           <ValidationError
@@ -72,10 +88,10 @@ const Form = () => {
             errors={state.errors}
           />
 
-          <div className='my-5 sm:w-fit w-full relative cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px] overflow-hidden text-white bg-[#6F3081] py-6 self-center px-24 flex items-center rounded-full font-bold'>
+          <div onClick={handleContactSubmission} className='my-5 sm:w-fit w-full relative cursor-pointer transition duration-300 ease-in-out z-10 hover:shadow-lg hover:shadow-[#ff395161] hover:bg-opacity-38 hover:translate-y-[-6px] translate-z-[0.01px] overflow-hidden text-white bg-[#6F3081] py-6 self-center px-24 flex items-center rounded-full font-bold'>
             <button
               type='submit'
-              onClick={handleContactSubmission}
+              
               className='z-10'
             >
               {' '}
