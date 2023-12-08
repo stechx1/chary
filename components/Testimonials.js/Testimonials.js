@@ -29,7 +29,7 @@ const Testimonials = () => {
           <TestimonialBox
             heading={'THE GARRISON'}
             para={
-              'I am very satisfied with the collaboration. They have excellent knowledge and are always available for questions. I can express my ideas and questions very well. The personal approach, making time and listening attentively are great pluses for me in the cooperation.'
+              'I am very satisfied with the collaboration. I really liked working with them. They have excellent knowledge and are always available for questions. I can express my ideas and questions very well. The personal approach, making time and listening attentively are great pluses for me in the cooperation.'
             }
             name={'Ruben Vlier'}
             position={'CEO'}
