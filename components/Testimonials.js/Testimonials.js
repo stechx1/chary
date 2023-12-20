@@ -31,7 +31,7 @@ const Testimonials = () => {
             para={
               'I am very satisfied with the collaboration. I really liked working with them. They have excellent knowledge and are always available for questions. I can express my ideas and questions very well. The personal approach, making time and listening attentively are great pluses for me in the cooperation.'
             }
-            name={'Ruben Vlier'}
+            name={'Ruben Vlie'}
             position={'CEO'}
             image={'/images/testimonial/testimonial1.png'}
           />
@@ -45,7 +45,7 @@ const Testimonials = () => {
             para={
               'The cooperation with Chary has shown what is possible for Rinsma Modeplein. In a short time they have managed to achieve unprecedented sales.'
             }
-            name={'Anna Rinsma'}
+            name={'Anna Rin'}
             position={'CMO'}
             image={'/images/testimonial/testimonial2.png'}
           />
@@ -57,7 +57,7 @@ const Testimonials = () => {
             para={
               'Chary is a perfect sparring partner in online marketing for us as an interior store. Personal, young, dynamic and knowledgeable. Chary has helped us to set up an online marketing strategy and helps us in its implementation. Shortly after the first moment of contact, our first campaign went live. Thank you Ryan and team! We are very happy with our cooperation and the results.'
             }
-            name={'Michiel van de Water'}
+            name={'Michiel Watt'}
             position={'Founder & Business Developer at Oletti'}
             image={'/images/testimonial/testimonial3.png'}
           />
